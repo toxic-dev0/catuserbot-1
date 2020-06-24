@@ -23,7 +23,7 @@ def bruh(name):
     os.system("instantmusic -q -s "+name)
     
 
-@borg.on(admin_cmd(pattern="v2song?(.*)"))
+@borg.on(admin_cmd(pattern="song?(.*)"))
 async def _(event):
     await event.edit("`yeah..! let me find that song.. ⌛️ `")
     reply_to_id = event.message.id
